@@ -1,0 +1,25 @@
+
+<table class="table table-bordered table-condensed table-hover">
+	<tr>
+	<td>
+
+<?php foreach($this->form as $key => $value) : ?>
+	
+ 	<?php if ($key == "title"):?> 
+		<?php echo $value;?>|
+	<?php endif; ?>
+	 	<?php if ($key == "description"):?>
+		<?php echo $value;?>|
+	<?php endif; ?>
+	
+ 	<?php if ($key == "dateModified"):?>
+		<?php echo $value;?>|
+	<?php endif; ?>
+		<?php if ($key == "link"):?>
+		<a class="label label-primary" href="<?php echo "$value";?>">linK</a>|
+	<?php endif; ?>
+<?php endforeach; ?>
+</td>
+	</tr>
+
+</table> 
